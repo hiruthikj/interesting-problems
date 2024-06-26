@@ -1,3 +1,5 @@
+####### Code in https://github.com/hiruthikj/interesting-problems/blob/main/100gb-discrepancy/python/main.py ########
+
 # Using KV store available in standard library of python 
 # Advantage: Has API like python dict, is faster than sqlite3 (https://remusao.github.io/posts/python-dbm-module.html)
 # Not platform independent (https://docs.python.org/3/library/dbm.html) - can dockerize
@@ -74,7 +76,6 @@ def main():
 
     with dbm.open(db_filename, flag='r') as db:
         print(f"Using {dbm.whichdb(db_filename)}")
-        # key = str(hash_point(42,32))
         # for key in db:
             # print(db[key])
 
